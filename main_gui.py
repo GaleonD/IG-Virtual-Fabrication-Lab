@@ -65,7 +65,7 @@ with tab2:
 
     ires_col1, ires_col2 = st.columns([1, 2])
     
-    depths, concentrations = calculate_doping_profile(dopant, energy, dose)
+    depths, concentrations = doping_profile(dopant, energy, dose)
     
     with ires_col1:
         st.metric("Peak Concentration", f"{max(concentrations):.2e} cm⁻³")
