@@ -1,5 +1,5 @@
 import numpy as np
-from conversions import c_to_k, min_to_hr, μm_to_nm
+from main_conversions import c_to_k, min_to_hr, μm_to_nm
 
 # the math
 
@@ -25,6 +25,6 @@ def thickness_computation(T_c, t_min, pressure=1.0, mode="dry"):
 
 # execute
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     res = thickness_computation(1000, 60, 1.0, "dry")
     print(f"{res:.2f} nm")
