@@ -1,5 +1,5 @@
 import numpy as np
-from conversions import nox
+from main_conversions import nox
 
 # the math
 
