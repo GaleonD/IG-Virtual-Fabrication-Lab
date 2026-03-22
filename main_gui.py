@@ -57,7 +57,7 @@ with tab2:
     
     icol1, icol2, icol3 = st.columns(3)
     with icol1:
-        dopant = st.selectbox("Dopant Species", ["Boron", "Phosphorus", "Arsenic"])
+        dopant = st.selectbox("Dopant Species", ["Boron", "Phosphorous", "Arsenic"])
     with icol2:
         energy = st.select_slider("Implant Energy (keV)", options=[10, 30, 50, 100, 200], value=100)
     with icol3:
