@@ -30,7 +30,7 @@ To make the "Virtual Fab" more comprehensive and reactive, the following upgrade
 **Advanced Error Handling:** "Safety Guardrails" that trigger visual warnings if process parameters (like Temperature or Dose) exceed physically realistic bounds.<br>
 **Exportable Fab Reports:** A one-click "Download CSV/PDF" button to save simulation results and plots for academic lab reports.
 <br><br>
-## **🛠️ Tech Stack**<br>
+## **Tech Stack**<br>
 Language: Python 3.10+.<br>
 Framework: Streamlit (Web UI).<br>
 Math/Stats: NumPy, SciPy.<br>
