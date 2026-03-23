@@ -1,6 +1,6 @@
 from ers_datalib import etch_data
 
-def calculate_etch_profile(etchant, initial_thickness, time):
+def etch_profile(etchant, initial_thickness, time):
 
     data = etch_data[etchant]
     target = data["SiO2"] if "SiO2" in data else data.get("Si3N4", 10)
@@ -26,7 +26,7 @@ def calculate_etch_profile(etchant, initial_thickness, time):
 
 if __name__ == "__main__":
 
-    res = calculate_etch_profile("Hydrogen Fluoride (Buffered)", 100, 1.5)
+    res = etch_profile("Hydrogen Fluoride (Buffered)", 100, 1.5)
     print(f"Remaining Oxide: {res['remaining_target']} nm")
     print(f"Substrate Loss: {res['substrate_loss']:.2f} nm")
     print(f"Selectivity: {res['selectivity']}:1")
