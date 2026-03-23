@@ -14,7 +14,7 @@ def doping_profile(dopant, energy, dose):
 
     x = np.linspace(0, 1000, 500)
 
-    # formulas
+    # the formulas
 
     cp = dose / (np.sqrt(2 * 3.14) * drp)
     cx = cp * np.exp(-(x - rp)**2 / (2 * (drp)**2))
