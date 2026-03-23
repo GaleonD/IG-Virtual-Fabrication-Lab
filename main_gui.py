@@ -75,7 +75,7 @@ with tab3:
         etch_time = st.slider("Etch Time (min)", 0.0, 10.0, 1.0, step=0.1)
     
     eres_col1, eres_col2 = st.columns([1, 2])
-    res = etch_profile(etchant, initial_thickness, time)
+    res = etch_profile(etchant_choice, initial_thick, etch_time)
     
     with eres_col1:
         st.metric("Remaining Target", f"{res['remaining_target']:.2f} nm")
