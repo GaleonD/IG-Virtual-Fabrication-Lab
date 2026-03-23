@@ -9,8 +9,8 @@ from ers_datalib import etch_data
 
 st.set_page_config(page_title="IG's Virtual FabLab", layout="wide")
 
-st.title("VLSI Process Predictive Dashboard")
-st.caption("Developed by Indrajith (and AI)")
+st.title("Predictive Dashboard for VLSI Processes")
+st.caption("Developed by Indr(A)j(I)th.")
 st.markdown("---")
 
 tab1, tab2, tab3 = st.tabs(["Thermal Oxidation", "Ion Implantation", "Etch Lab"])
