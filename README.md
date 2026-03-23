@@ -31,8 +31,8 @@ To make the "Virtual Fab" more comprehensive and reactive, the following upgrade
 **Exportable Fab Reports:** A one-click "Download CSV/PDF" button to save simulation results and plots for academic lab reports.
 <br><br>
 ## **Tech Stack**<br>
-Language: Python 3.10+.<br>
-Framework: Streamlit (Web UI).<br>
-Math/Stats: NumPy, SciPy.<br>
-Visualization: Matplotlib.<br>
-Other Tools: BYU Cleanroom Process Calculator(s), Google Gemini AI.
+**Language:** Python 3.10+.<br>
+**Framework:** Streamlit (Web UI).<br>
+**Math/Stats:** NumPy, SciPy.<br>
+**Visualization:** Matplotlib.<br>
+**Other Tools:** BYU Cleanroom Process Calculator(s), Google Gemini AI.
