@@ -11,7 +11,7 @@ def thickness_computation(T_c, t_min, pressure=1.0, mode="dry"):
     T = c_to_k(T_c)
     t = min_to_hr(t_min)
 
-    #the formulas
+    # the formulas
 
     b = B0_DRY * np.exp(-1.24 / (KB * T)) * pressure
     ba = BA0_DRY * np.exp(-2.00 / (KB * T)) * pressure
