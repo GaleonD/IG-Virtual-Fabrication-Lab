@@ -1,6 +1,6 @@
 from ers_datalib import etch_data
 
-#the math
+# the math
 
 def etch_profile(etchant, initial_thickness, time):
 
@@ -8,7 +8,7 @@ def etch_profile(etchant, initial_thickness, time):
     target = data["SiO2"] if "SiO2" in data else data.get("Si3N4", 10)
     substrate = data["Silicon"]
 
-    #the formulas
+    # the formulas
     
     selectivity = target / substrate if substrate > 0 else float('inf')
     
@@ -28,7 +28,7 @@ def etch_profile(etchant, initial_thickness, time):
 
     }
 
-#execute
+# execute
 
 if __name__ == "__main__":
 
