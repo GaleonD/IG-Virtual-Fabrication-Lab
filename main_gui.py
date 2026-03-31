@@ -9,8 +9,8 @@ from ers_datalib import etch_data
 
 st.set_page_config(page_title="IG's Virtual FabLab", layout="wide")
 
-st.title("Predictive Dashboard for VLSI Processes")
-st.caption("Developed by Indr(A)j(I)th.")
+st.title("VLSI Process Predictive Dashboard")
+st.caption("Developed by Indrajith (and AI)")
 st.markdown("---")
 
 tab1, tab2, tab3 = st.tabs(["Thermal Oxidation", "Ion Implantation", "Etch Lab"])
@@ -70,7 +70,7 @@ with tab3:
         etchant_choice = st.selectbox("Etch Chemistry", list(etch_data.keys()))
         st.info(f"Mechanism: {etch_data[etchant_choice]['Description']}")
     with ecol2:
-        initial_thick = st.number_input("Target Thickness (nm)", 1, 1000, 100)
+        initial_thick = st.number_input("Target Thickness (nm)", 1, 1000, 100) 
     with ecol3:
         etch_time = st.slider("Etch Time (min)", 0.0, 10.0, 1.0, step=0.1)
     
